@@ -22,8 +22,9 @@ function populateVoices(){
 
 function setVoice(){
     for(let index =0; index < voices.length; index++){
-        if(voicesDropdown.value === voices[index.name]){
+        if(voicesDropdown.value === voices[index].name){
             message.voice = voices[index];
+            break;
         }
     }
 }
